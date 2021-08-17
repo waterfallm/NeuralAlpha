@@ -11,10 +11,30 @@ https://www.npmjs.com/package/mailparser - 250k per wk
 
 # Script Usage
 
+
+
 ```
 npm install
 ``` 
 
+##src/fetchemail.js 
+
+create .env file with params for your Email provider
+```
+   emailusername=xxx
+   emailpassword=xxx
+   emailhost=xxx
+   emailport=xxx
+```
+Run File with
+```
+node src/fetchemail.js
+```
+
+Then send an email to same email address and email will be saved out to local file system on receipt, this gives you a real world example of am decoded email.
+
+
+To parse the received email 
 
 ```
 const parseEmail = require('./parseemail.js')

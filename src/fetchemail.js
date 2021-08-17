@@ -3,6 +3,8 @@ require('dotenv').config();
 
 const emailusername = process.env.emailusername;
 const emailpassword = process.env.emailpassword;
+const emailhost = process.env.emailhost;
+const emailport = process.env.emailport;
 // console.log(emailusername, emailpassword)
 
 var MailListener = require("mail-listener2");
@@ -13,8 +15,8 @@ var emailDate = new Date().toUTCString()
 var mailListener = new MailListener({
     username: emailusername,
     password: emailpassword,
-    host: "imap.gmail.com",
-    port: 993, // imap port
+    host: emailhost,
+    port: emailport, // imap port
     tls: true,
     connTimeout: 10000, // Default by node-imap
     authTimeout: 5000, // Default by node-imap,
