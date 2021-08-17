@@ -49,15 +49,15 @@ async function parseEmail(data) {
         let array = parsed.text.split('\n')
 
         for (let index = 0; index < array.length; ++index) {
-            console.log("line:" + index, array[index], Date.parse(array[index]));
+            // console.log("line:" + index, array[index], Date.parse(array[index]));
 
             let linearray = array[index].split(':')
             if (linearray.length === 2) { // potential date & value combo
-                console.log("Date:", linearray[0], Date.parse(linearray[0]))
-                console.log("Value:", linearray[1])
+                // console.log("Date:", linearray[0], Date.parse(linearray[0]))
+                // console.log("Value:", linearray[1])
 
                 if (Date.parse(linearray[0])) {
-                    console.log("valid Date")
+                    // console.log("valid Date")
                     if (Number(linearray[1]) >= lowerbound && Number(linearray[1]) <= upperbound) {
 
                         // parsedOutput = parsedOutput + `\t\t"${linearray[0]}"  :  ${linearray[1]}`
