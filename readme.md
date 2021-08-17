@@ -1,12 +1,14 @@
 # NPM package Selection
 
-## Transports
-https://www.npmjs.com/package/mail-listener - 142 wk dl
-https://www.npmjs.com/package/mail-listener2 - 4000 wk dl
 
-## Parsing
-https://github.com/willdurand/EmailReplyParser
-https://www.npmjs.com/package/mailparser - 250k per wk
+
+Package Name|Package Link|Package Popularity
+------------|------------|------------------
+mail-listener | https://www.npmjs.com/package/mail-listener | 142 wk dl
+mail-listener 2 | https://www.npmjs.com/package/mail-listener2 |  4000 wk dl
+mailparser | https://www.npmjs.com/package/mailparser | 250k per wk
+
+
 
 
 # Script Usage
@@ -17,7 +19,7 @@ https://www.npmjs.com/package/mailparser - 250k per wk
 npm install
 ``` 
 
-##src/fetchemail.js 
+## src/fetchemail.js 
 
 create .env file with params for your Email provider
 ```
@@ -33,8 +35,9 @@ node src/fetchemail.js
 
 Then send an email to same email address and email will be saved out to local file system on receipt, this gives you a real world example of am decoded email.
 
+## src/parseemail.js 
 
-To parse the received email 
+To parse the received email create file called test.js with the following code
 
 ```
 const parseEmail = require('./parseemail.js')
