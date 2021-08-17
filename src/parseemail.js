@@ -41,7 +41,8 @@ async function parseEmail(data) {
     // console.log(parsed.text.split('\n').length)
 
     if (emailwhitelist.includes(parsed.from.value[0].address)) {
-        //valid sender
+        //invalid sender
+
 
         parsedOutput = `{\n\t"sender" : "${parsed.from.value[0].address}" ,\n`
         parsedOutput = parsedOutput + `\t"values": {\n`
@@ -62,11 +63,11 @@ async function parseEmail(data) {
 
                         // parsedOutput = parsedOutput + `\t\t"${linearray[0]}"  :  ${linearray[1]}`
                         parsedOutput = `${parsedOutput}\t\t"${formatDate(linearray[0])}"  :  ${linearray[1]}`
-
-                        if (index < (linearray.length)) {
-                            parsedOutput = parsedOutput + `,\n`
-                        } else {
+                        // console.log(index, array.length, (index > (array.length - 4)))
+                        if (index > (array.length - 4)) {
                             parsedOutput = parsedOutput + `\n`
+                        } else {
+                            parsedOutput = parsedOutput + `,\n`
                         }
 
                         itemcount = itemcount + 1

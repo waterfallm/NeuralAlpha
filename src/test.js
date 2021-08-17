@@ -12,6 +12,6 @@ fs.readFile(filename, 'utf8', function (err, data) {
     console.log('OK: ' + filename);
     // console.log(data)
     parseEmail(data).then(parseddata => {
-        console.log(parseddata)
+        // console.log(parseddata)
     })
 })

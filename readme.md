@@ -82,7 +82,7 @@ node src/test.js samples/test-005.txt
 # To Do
 
 1. Extend Test Cases more conplex and not repeating same 3 line
-2. Configure Tape for automated testing
-3. Refactor for loop in parseemail.js
+2. Configure Tape for automated testing - WIP `npm run unit:test` currently failing on test 4 
+3. Refactor(break & continue) for loop in parseemail.js
 4. add email whitelisting to fetchemail script also.
 

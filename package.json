@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "unit:test": "node test/test.js",
     "lint": "eslint src"
   },
   "author": "",
@@ -15,7 +16,8 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "mail-listener2": "^0.3.1",
-    "mailparser": "^3.3.0"
+    "mailparser": "^3.3.0",
+    "tape": "^5.3.1"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
