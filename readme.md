@@ -46,7 +46,7 @@ node src/test.js samples/test-005.txt
 
 # To Do
 
-1. Extent Test Cases
+1. Extend Test Cases more conplex and not repeating same 3 line
 2. Configure Tape for automated testing
 3. Refactor for loop in parseemail.js
 

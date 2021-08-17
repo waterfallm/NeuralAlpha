@@ -1,4 +1,9 @@
 const fs = require('fs');
+require('dotenv').config();
+
+const emailusername = process.env.emailusername;
+const emailpassword = process.env.emailpassword;
+// console.log(emailusername, emailpassword)
 
 var MailListener = require("mail-listener2");
 const simpleParser = require('mailparser').simpleParser;
@@ -6,8 +11,8 @@ const simpleParser = require('mailparser').simpleParser;
 var emailDate = new Date().toUTCString()
 
 var mailListener = new MailListener({
-    username: "waterfallmatthew88",
-    password: "d218922u",
+    username: emailusername,
+    password: emailpassword,
     host: "imap.gmail.com",
     port: 993, // imap port
     tls: true,
