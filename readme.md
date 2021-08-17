@@ -37,6 +37,18 @@ Then send an email to same email address and email will be saved out to local fi
 
 ## src/parseemail.js 
 
+Edit parseemail.js to edit constants 
+* lowerbound: lower limit number to reject a email data value, note rest of email still parsed.
+* upperbound: upper limit number to reject a email data value, note rest of email still parsed.
+* emailwhitelist: Only emails in this array will be parsed.
+
+```
+//const for some basic input input validation
+const lowerbound = 0
+const upperbound = 20000
+const emailwhitelist = ['waterfall_matthew@hotmail.com', 'matthew@waterfall-family.co.uk']
+```
+
 To parse the received email create file called test.js with the following code
 
 ```
@@ -72,4 +84,5 @@ node src/test.js samples/test-005.txt
 1. Extend Test Cases more conplex and not repeating same 3 line
 2. Configure Tape for automated testing
 3. Refactor for loop in parseemail.js
+4. add email whitelisting to fetchemail script also.
 
