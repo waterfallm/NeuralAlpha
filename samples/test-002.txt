@@ -1,0 +1,190 @@
+Delivered-To: waterfallmatthew88@gmail.com
+Received: by 2002:a6b:dd14:0:0:0:0:0 with SMTP id f20csp1718331ioc;
+        Fri, 13 Aug 2021 04:32:04 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxPT5Cl/LffzIwQAck81CnQiTXah+y1IPzs/5B1hfbnCdxeaPIouJYmv5YTVgdkWjNqFqoc
+X-Received: by 2002:adf:dbd0:: with SMTP id e16mr2581192wrj.65.1628854324323;
+        Fri, 13 Aug 2021 04:32:04 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1628854324; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=kLOdkDHAUb9xTsRrEYKLIpI25K1c4YtJAeReNxZOOGJ7D0GStiNpGiNzJMxzmvLzfH
+         qSY40zjzLbYhhGhAr0VbJE9O0aEbt9Bh7g4j3iUkXS0M/sWkppsMi68NP5CaWto1Ar/P
+         QVXHs+0BdU83shOE2MKdrphF2Q2CjL5/tpTsMY1wHLE/BmClZH9aTztLMDlBmg2xYfrB
+         C4rwt5rIrEU/QUxkW16ZNYZFMxrODEDQoJPnXrV+CwgzoP+yiajLbQ/CwTWK4pyyaSqN
+         aKHleUOawQIx+h31lNFfr0p+je/OBxTAJNnpbNZHwFYyUUYYhrSC/38VGSXEsngrVe2t
+         pi6Q==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:message-id:date
+         :thread-index:thread-topic:subject:to:from:dkim-signature;
+        bh=k3a1+VEzGFk5ZFZlDN5kqNZLzf6IRwQVmS53WvIKbaQ=;
+        b=lMOLK62RV+j6U9ngpKb4/EdcJwicBprhEng8vYI1nPpghy1iwa3h/RqmIou17v5/U6
+         2mclYCcI9DGnbgaZRQyLhJn4Q2C6kW7kT8THjT1UmxSceJ2pd3hyt7HtbFnbX4XTzHaz
+         sjitV1GkQAIzPCt965P7mTcoFdeEQbbioDWwKs+RKHvIIMnREwaOL/NJKeRZM0blgxLw
+         hqKFf/oG+vkKdi2IQn721p5sTewoJoFEymrnQr98NDpNTktILO4F+vFLg/9WdeogocmN
+         CyaM+BowmZ9MSd2hy6Mrs8EEwQPTNXHtcbHRqpCK0V96gYlqnbAP1T767JZ4GoEnsx5p
+         yApw==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=ddTOqwnv;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of waterfall_matthew@hotmail.com designates 40.92.73.101 as permitted sender) smtp.mailfrom=waterfall_matthew@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+Return-Path: <waterfall_matthew@hotmail.com>
+Received: from EUR04-HE1-obe.outbound.protection.outlook.com (mail-oln040092073101.outbound.protection.outlook.com. [40.92.73.101])
+        by mx.google.com with ESMTPS id r14si1127211wrt.494.2021.08.13.04.32.04
+        for <waterfallmatthew88@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 13 Aug 2021 04:32:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of waterfall_matthew@hotmail.com designates 40.92.73.101 as permitted sender) client-ip=40.92.73.101;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=ddTOqwnv;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of waterfall_matthew@hotmail.com designates 40.92.73.101 as permitted sender) smtp.mailfrom=waterfall_matthew@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=QGUagLDzx8d66zE5u3rM7ql0/jfjszxWrLjtGCPYj6KTEbfM9Af4hT/w1Ux4ccYuqJe18kS2BzutrGlg0nPsTUCJkvh1cvXG+1eD3+FKrLzyuUDQU/IXMQwUrAa1cXVg9pD+wb/tHrLBRG3freJzUbm4n1UNzucv8aAOjQ770awQzOJPWrEsjk6gtMdCKYC/p+DzYBh8e/z6DoeZrFK4a2nOW94vy3aHkSw0JZ5NJbo4laeubUWVbFSEIhK0ZZbY6UtUhLZcCs//pKNws4IIA6sCzmOMTIodpql1bp0Q65r8yQ31DLUGKy0olhNjOIdMMAmw4mxFscfwtj6JZ0HOjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=k3a1+VEzGFk5ZFZlDN5kqNZLzf6IRwQVmS53WvIKbaQ=;
+ b=U/xrj1Zja0eh5IGpbX10Fw+VEOOVSWrTB3vUudxID8E5M+k5F6w3g5hHUBIvbxwrDTgJEaDS7RNzqnYfZAVlCZTjzCsLM56mzAXhcAl2Fra9vh6YhKVXR6PH0l74x5MEtutP73g9XX6nmJ9udPJvaM9HehXdWUXpm4Z7MhwO6aCN855BpvE8dbHdDMyteHNhWIdM8IkSC17VEn0vyydtxs2Qg0CuKFIx1SM0G1WuM4F9EDUdVrfhn9h7Lv22GJhaWoEJYFZL8fN4kA9vSaB7blzSBiQijFPNtvW1O+4gUAc+dyhQ9fLJAaH950CC220syx0SzvZdbif8Nmt32LkgyQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=k3a1+VEzGFk5ZFZlDN5kqNZLzf6IRwQVmS53WvIKbaQ=;
+ b=ddTOqwnv8SwJyIULVvQP0wCSsinKq0oebwrbQWLyoDTj44hFOB9zv1ZVywdoYVvcikq87IQB4LwK8n5MNfo3VrHNcwwPZBxcypcpurhBHFlMM4usXdPT48JLQgst2ivwSV7b6QAUITCRanK/YqLOv7g4n/UuUsUmR4b2XNOY4GgKFcQJd6dir0tD6tK+BKaHPc51OtiGjk7x6Vr6PBiGtDlWrwYUN97QfnMgNZrYPqcsJD+4tlRXtvz6rt/Cu4OIw97BaukQ+QCufFbE5dfbs3wjkgUJgdTnSD3vesGxLQfrAmutXxPI9UeUoqTQFsyhSTH5WzTp5UZC8yoatKr3bw==
+Received: from HE1EUR04FT018.eop-eur04.prod.protection.outlook.com
+ (2a01:111:e400:7e0d::50) by
+ HE1EUR04HT138.eop-eur04.prod.protection.outlook.com (2a01:111:e400:7e0d::79)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16; Fri, 13 Aug
+ 2021 11:32:03 +0000
+Received: from AM6PR04MB6101.eurprd04.prod.outlook.com
+ (2a01:111:e400:7e0d::48) by HE1EUR04FT018.mail.protection.outlook.com
+ (2a01:111:e400:7e0d::89) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.14 via Frontend
+ Transport; Fri, 13 Aug 2021 11:32:03 +0000
+Received: from AM6PR04MB6101.eurprd04.prod.outlook.com
+ ([fe80::3930:4b6c:20df:8561]) by AM6PR04MB6101.eurprd04.prod.outlook.com
+ ([fe80::3930:4b6c:20df:8561%3]) with mapi id 15.20.4415.019; Fri, 13 Aug 2021
+ 11:32:03 +0000
+From: Matthew Waterfall <waterfall_matthew@hotmail.com>
+To: "waterfallmatthew88@gmail.com" <waterfallmatthew88@gmail.com>
+Subject: test-002
+Thread-Topic: test-002
+Thread-Index: AdeQNsbpduKmy159TDufbaSucFRm4A==
+Date: Fri, 13 Aug 2021 11:32:03 +0000
+Message-ID:
+ <AM6PR04MB61010029FFBAF4E1F22B140194FA9@AM6PR04MB6101.eurprd04.prod.outlook.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker:
+ OriginalChecksum:52096003AC95D9FE1BD36320E55BE58D2C3AF3A468A97577FDBEC0424B6E535F;UpperCasedChecksum:303F30DFA8466807EA5B23A4D22A4794CEFA356AA410DA8FC1C702D33AC1FCFD;SizeAsReceived:6610;Count:41
+x-tmn: [CauffmwsnxKOXX+gtu6R23cfdurBKpQi]
+x-ms-publictraffictype: Email
+x-incomingheadercount: 41
+x-eopattributedmessage: 0
+x-ms-office365-filtering-correlation-id: 640445f3-c989-4e13-f4a2-08d95e4df900
+x-ms-traffictypediagnostic: HE1EUR04HT138:
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ nFx17bKxrBlym9dP0RFrI1c1F1KqiHIq4tJeFmqRK9YPktnfUY6dVtr+DeT8wW27jlYWtoOC+2Z2+kJ98sSfgtY8dKQbQhaj3wi7Zyg1hkYOl7iiswSZSFVwqJkSIUXJmgZq0L5aHF+5JMqJwn/emoMtzSETSIZFc3Yg6tP1n3DnSMg+YZGKrqEEbtkV4LGXjDz55UFHaBRXOFnjoCP5z9q1anx4PZp20Ar4FAXA0eMKp5Vsu1FjzzP0kb8onVMMr6wTmCfvJ/ltBg7UA6O/1yYbecwzFcIPaUICWNmwPcHZSX17Oq65ze+zLpwI6GVt
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ G4OyxcPlMyqIcX/KkFjffiF4pKrFH7pkaVzu6pBudiwtv3dYWU6OzPY4ZfAbdYj6a3Z6ToueLShuUvZqiicvuM4JVhp+50EtYkR3YG1u8vHHAoPeiGoJL4C+frYmRGhyBk9/6LQSDZe7BcA67KupZA==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_AM6PR04MB61010029FFBAF4E1F22B140194FA9AM6PR04MB6101eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-AuthSource: HE1EUR04FT018.eop-eur04.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 640445f3-c989-4e13-f4a2-08d95e4df900
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Aug 2021 11:32:03.2038
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HE1EUR04HT138
+
+--_000_AM6PR04MB61010029FFBAF4E1F22B140194FA9AM6PR04MB6101eurp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+May 10 2021: 9.130
+11 May 2021: 12500
+12 May 2021: 140.25
+
+
+--_000_AM6PR04MB61010029FFBAF4E1F22B140194FA9AM6PR04MB6101eurp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-GB" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal" style=3D"background:white"><span lang=3D"EN" style=
+=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222=
+;mso-fareast-language:EN-GB">May 10 2021: 9.130</span><span style=3D"font-s=
+ize:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222;mso-farea=
+st-language:EN-GB"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span lang=3D"EN" style=
+=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222=
+;mso-fareast-language:EN-GB">11 May 2021: 12500</span><span style=3D"font-s=
+ize:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222;mso-farea=
+st-language:EN-GB"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span lang=3D"EN" style=
+=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222=
+;mso-fareast-language:EN-GB">12 May 2021: 140.25</span><span style=3D"font-=
+size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222;mso-fare=
+ast-language:EN-GB"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_AM6PR04MB61010029FFBAF4E1F22B140194FA9AM6PR04MB6101eurp_--
